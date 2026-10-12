@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Concept homepage redesign for Uttarakhand Public Service Commission">
+  <title>Uttarakhand Public Service Commission — Homepage Concept</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="utility-left"><span>Government of Uttarakhand</span><span class="dot">•</span><span>Official Website Concept</span></div>
+      <div class="utility-right">
+        <button class="text-control" id="contrastToggle" type="button" aria-pressed="false">High contrast</button>
+        <span class="utility-separator">|</span>
+        <button class="text-control" id="fontDown" type="button" aria-label="Decrease text size">A−</button>
+        <button class="text-control" id="fontReset" type="button" aria-label="Reset text size">A</button>
+        <button class="text-control" id="fontUp" type="button" aria-label="Increase text size">A+</button>
+        <span class="utility-separator">|</span>
+        <a href="#main">Screen reader access</a>
+        <span class="utility-separator">|</span>
+        <button class="text-control" id="languageToggle" type="button">हिन्दी</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="masthead">
+    <div class="container masthead-inner">
+      <div class="identity">
+        <div class="emblem" aria-label="Emblem placeholder">
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <path d="M32 5 8 17v20c0 11 10 18 24 22 14-4 24-11 24-22V17L32 5Z" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M14 24 24 15l8 8 8-8 10 9M18 34h28M22 42h20M27 49h10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="32" cy="30" r="5" fill="currentColor"/>
+          </svg>
+        </div>
+        <div>
+          <p class="identity-kicker">उत्तराखण्ड लोक सेवा आयोग</p>
+          <h1>Uttarakhand Public Service Commission</h1>
+          <p class="identity-subtitle">Haridwar, Uttarakhand · Official Commission Portal</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="contact-chip"><span class="contact-icon">☎</span><span><small>Helpline</small><strong>1800 180 4143</strong></span></div>
+        <a class="app-link" href="#candidate-services">Candidate services <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">☰ <span>Menu</span></button>
+      <div class="nav-links" id="navLinks">
+        <a class="nav-active" href="#main">Home</a>
+        <a href="#commission">About the Commission <span class="chevron">⌄</span></a>
+        <a href="#candidate-services">Candidate Corner <span class="chevron">⌄</span></a>
+        <a href="#notices">Recruitment & Exams <span class="chevron">⌄</span></a>
+        <a href="#resources">Resources <span class="chevron">⌄</span></a>
+        <a href="#contact">Contact</a>
+      </div>
+      <form class="nav-search" id="siteSearch" role="search">
+        <label class="visually-hidden" for="searchInput">Search UKPSC website</label>
+        <input id="searchInput" type="search" placeholder="Search notifications, exams..." />
+        <button type="submit" aria-label="Search">⌕</button>
+      </form>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="notice-strip" aria-label="Important notice">
+      <div class="container notice-inner">
+        <span class="notice-label"><span class="pulse-dot"></span> IMPORTANT</span>
+        <p><strong>Candidate advisory:</strong> Check the official notification carefully for eligibility, deadlines and examination instructions before applying.</p>
+        <a href="#notices">View notices <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Fairness · Transparency · Public Service</p>
+        <h2 id="hero-title">Your path to<br><span>public service</span> starts here.</h2>
+        <p class="hero-description">Find recruitment notifications, examination schedules, admit cards, answer keys and results—all in one trusted place.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#notices">Explore recruitments <span aria-hidden="true">→</span></a>
+          <a class="button button-outline" href="#candidate-services">Candidate services</a>
+        </div>
+        <div class="hero-trust"><span class="trust-check">✓</span> Official information from UKPSC <span class="trust-divider">|</span> Updated through authorised notices</div>
+      </div>
+      <div class="hero-visual" aria-label="Decorative illustration of Uttarakhand mountains">
+        <div class="visual-topline"><span>UTTARAKHAND</span><span>PUBLIC SERVICE COMMISSION</span></div>
+        <svg class="mountain-art" viewBox="0 0 640 400" role="img" aria-label="Illustration of Himalayan mountains and pine forests">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dcebf4"/><stop offset="1" stop-color="#f8f4e9"/></linearGradient>
+            <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#537d79"/><stop offset="1" stop-color="#244e4b"/></linearGradient>
+          </defs>
+          <rect width="640" height="400" rx="14" fill="url(#sky)"/>
+          <circle cx="490" cy="85" r="38" fill="#f3dba0"/>
+          <path d="M0 260 105 140 164 203 250 75 360 214 426 142 530 245 590 180 640 240V400H0Z" fill="#b9ced5"/>
+          <path d="m194 150 56-75 61 78-34-17-25 10-20-15-19 18Z" fill="#fff" opacity=".94"/>
+          <path d="m367 225 59-83 64 66-38-17-21 11-23-13-18 18Z" fill="#fff" opacity=".9"/>
+          <path d="M0 287 122 216 230 276 340 204 445 279 553 214 640 270V400H0Z" fill="#7b9b8d"/>
+          <path d="M0 320 115 269 224 313 345 260 454 322 560 270 640 310V400H0Z" fill="url(#hill)"/>
+          <g fill="#193f3b">
+            <path d="m50 352 23-72 23 72h-14l14 26H50l14-26Z"/><path d="m95 375 18-55 18 55h-11l11 20H95l11-20Z"/>
+            <path d="m520 355 24-78 24 78h-15l15 27h-48l15-27Z"/><path d="m565 380 18-57 18 57h-11l11 20h-36l11-20Z"/>
+            <path d="m450 375 15-48 15 48h-9l9 17h-30l9-17Z"/>
+          </g>
+          <path d="M0 375Q120 350 230 379T460 370T640 365V400H0Z" fill="#173e3a"/>
+          <path d="M0 391Q170 370 320 392T640 385V400H0Z" fill="#d7b56d" opacity=".9"/>
+        </svg>
+        <div class="hero-visual-caption"><span class="caption-mark">✦</span><span><strong>Serving Uttarakhand</strong><small>Merit-based recruitment. Public trust.</small></span></div>
+      </div>
+    </section>
+
+    <section class="container services-section" id="candidate-services" aria-labelledby="services-title">
+      <div class="section-heading">
+        <div><p class="section-kicker">QUICK ACCESS</p><h2 id="services-title">Candidate services</h2><p class="section-subtitle">The most-used services, just one click away.</p></div>
+        <a class="view-all" href="#resources">View all services <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="service-grid">
+        <a class="service-card" href="#notices"><span class="service-icon icon-blue">▤</span><span class="service-text"><strong>Recruitment notifications</strong><small>Vacancies, eligibility & application details</small></span><span class="card-arrow">↗</span></a>
+        <a class="service-card" href="#notices"><span class="service-icon icon-teal">▣</span><span class="service-text"><strong>Admit cards</strong><small>Download hall tickets and instructions</small></span><span class="card-arrow">↗</span></a>
+        <a class="service-card" href="#notices"><span class="service-icon icon-amber">✓</span><span class="service-text"><strong>Results</strong><small>Selection lists, marks and cut-off notices</small></span><span class="card-arrow">↗</span></a>
+        <a class="service-card" href="#notices"><span class="service-icon icon-violet">≡</span><span class="service-text"><strong>Answer keys</strong><small>Keys, objections and related updates</small></span><span class="card-arrow">↗</span></a>
+        <a class="service-card" href="#resources"><span class="service-icon icon-green">▦</span><span class="service-text"><strong>Exam calendar</strong><small>Upcoming examinations and schedules</small></span><span class="card-arrow">↗</span></a>
+        <a class="service-card" href="#resources"><span class="service-icon icon-red">▧</span><span class="service-text"><strong>Syllabus & papers</strong><small>Syllabus and previous question papers</small></span><span class="card-arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="updates-section" id="notices" aria-labelledby="updates-title">
+      <div class="container updates-layout">
+        <div class="updates-main">
+          <div class="section-heading">
+            <div><p class="section-kicker">OFFICIAL UPDATES</p><h2 id="updates-title">Latest notices</h2><p class="section-subtitle">Recruitment and examination updates from the Commission.</p></div>
+            <a class="view-all" href="#all-notices">All notices <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="notice-filters" role="group" aria-label="Filter notices">
+            <button class="filter-button active" data-filter="all">All updates</button>
+            <button class="filter-button" data-filter="recruitment">Recruitment</button>
+            <button class="filter-button" data-filter="admit">Admit cards</button>
+            <button class="filter-button" data-filter="results">Results</button>
+            <button class="filter-button" data-filter="tenders">Tenders</button>
+          </div>
+          <div class="notice-list" id="noticeList">
+            <article class="notice-item" data-category="recruitment">
+              <div class="date-block"><strong>07</strong><span>OCT 2026</span></div>
+              <div class="notice-content"><div class="notice-meta"><span class="tag tag-recruitment">Recruitment</span><span class="new-tag">NEW</span></div><h3><a href="#notice-detail">Uttarakhand Combined State Civil / Upper Subordinate Services Examination-2026 — Edit/Correction of Online Application Form</a></h3><p>Official notice · Please refer to the detailed notification for instructions and deadlines.</p></div>
+              <a class="notice-open" href="#notice-detail" aria-label="Open notice">↗</a>
+            </article>
+            <article class="notice-item" data-category="tenders">
+              <div class="date-block"><strong>07</strong><span>OCT 2026</span></div>
+              <div class="notice-content"><div class="notice-meta"><span class="tag tag-tender">Tender</span></div><h3><a href="#notice-detail">E-Tender for hiring diesel vehicles for Government work</a></h3><p>Tenders & advertisements · Refer to the official tender document for conditions.</p></div>
+              <a class="notice-open" href="#notice-detail" aria-label="Open notice">↗</a>
+            </article>
+            <article class="notice-item" data-category="recruitment">
+              <div class="date-block"><strong>07</strong><span>OCT 2026</span></div>
+              <div class="notice-content"><div class="notice-meta"><span class="tag tag-recruitment">Recruitment</span></div><h3><a href="#notice-detail">Directorate of Geology and Mining — Assistant Geologist, Mining Officer and Assistant Chemist (Group B) Examination-2026</a></h3><p>Notification, detailed notification, checklist and candidate declarations.</p></div>
+              <a class="notice-open" href="#notice-detail" aria-label="Open notice">↗</a>
+            </article>
+            <article class="notice-item" data-category="results">
+              <div class="date-block"><strong>25</strong><span>SEP 2026</span></div>
+              <div class="notice-content"><div class="notice-meta"><span class="tag tag-result">Result</span></div><h3><a href="#notice-detail">Uttarakhand Combined State Civil / Upper Subordinate Services Examination-2024 — Selection Result</a></h3><p>Selection result, cut-off marks and marks of candidates.</p></div>
+              <a class="notice-open" href="#notice-detail" aria-label="Open notice">↗</a>
+            </article>
+            <article class="notice-item" data-category="admit">
+              <div class="date-block"><strong>23</strong><span>SEP 2026</span></div>
+              <div class="notice-content"><div class="notice-meta"><span class="tag tag-admit">Admit card</span></div><h3><a href="#notice-detail">Special Subordinate Education (Lecturer—Group C) Examination-2025 — Admit card and scribe-related notice</a></h3><p>Subject-wise examination information and candidate instructions.</p></div>
+              <a class="notice-open" href="#notice-detail" aria-label="Open notice">↗</a>
+            </article>
+          </div>
+          <div class="empty-state" id="emptyState" hidden>No notices in this category in this sample view.</div>
+          <div class="notice-footer"><span>Showing selected examples for design preview.</span><a href="#all-notices">Browse notice archive <span aria-hidden="true">→</span></a></div>
+        </div>
+
+        <aside class="sidebar">
+          <section class="sidebar-card calendar-card" id="resources">
+            <div class="sidebar-heading"><span class="sidebar-icon">▦</span><div><h3>Exam calendar</h3><p>Plan ahead with official schedules.</p></div></div>
+            <div class="calendar-feature"><span class="calendar-year">2026–27</span><strong>Examination calendar</strong><p>View planned examinations and schedule updates.</p><a href="#exam-calendar">View calendar <span aria-hidden="true">→</span></a></div>
+          </section>
+          <section class="sidebar-card important-card">
+            <div class="sidebar-heading"><span class="sidebar-icon amber-icon">!</span><div><h3>Important links</h3><p>Frequently accessed resources.</p></div></div>
+            <a class="important-link" href="#resources"><span>▸</span> Syllabus <b>↗</b></a>
+            <a class="important-link" href="#resources"><span>▸</span> Previous question papers <b>↗</b></a>
+            <a class="important-link" href="#resources"><span>▸</span> Document verification <b>↗</b></a>
+            <a class="important-link" href="#resources"><span>▸</span> Forms and proformas <b>↗</b></a>
+            <a class="important-link" href="#resources"><span>▸</span> Recruitment Government Orders <b>↗</b></a>
+          </section>
+          <section class="help-card">
+            <div class="help-symbol">?</div><div><h3>Need help?</h3><p>For application or website assistance, contact the relevant support team.</p><a href="#contact">Contact support <span aria-hidden="true">→</span></a></div>
+          </section>
+        </aside>
+      </div>
+    </section>
+
+    <section class="commission-section container" id="commission">
+      <div class="commission-copy"><p class="section-kicker">ABOUT UKPSC</p><h2>Recruitment built on<br><span>merit and integrity.</span></h2><p>The Uttarakhand Public Service Commission conducts recruitment examinations and selection processes for public services in the state. This portal concept puts reliable information and candidate tasks first.</p><a class="button button-outline" href="#about">Know the Commission <span aria-hidden="true">→</span></a></div>
+      <div class="values-grid"><div class="value-card"><span>01</span><strong>Transparency</strong><p>Clear notices, dates and stage-wise updates.</p></div><div class="value-card"><span>02</span><strong>Accessibility</strong><p>Readable content and keyboard-friendly access.</p></div><div class="value-card"><span>03</span><strong>Reliability</strong><p>Official information presented consistently.</p></div><div class="value-card"><span>04</span><strong>Candidate-first</strong><p>Common tasks easy to find on any device.</p></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-main">
+      <div class="footer-brand"><div class="footer-emblem">UK</div><div><strong>Uttarakhand Public Service Commission</strong><p>Haridwar, Uttarakhand – 249404</p><p>Phone: +91 01334 244143</p></div></div>
+      <div class="footer-column"><h3>Candidate services</h3><a href="#notices">Recruitment notifications</a><a href="#notices">Admit cards</a><a href="#notices">Results & answer keys</a><a href="#resources">Exam calendar</a></div>
+      <div class="footer-column"><h3>Commission</h3><a href="#commission">About UKPSC</a><a href="#commission">Functions</a><a href="#contact">Contact us</a><a href="#contact">RTI</a></div>
+      <div class="footer-column"><h3>Website information</h3><a href="#contact">Accessibility statement</a><a href="#contact">Privacy policy</a><a href="#contact">Terms & conditions</a><a href="#contact">Sitemap</a></div>
+    </div>
+    <div class="footer-bottom"><div class="container footer-bottom-inner"><span>© Uttarakhand Public Service Commission. All rights reserved.</span><span>Homepage redesign concept · Not an official live service</span></div></div>
+  </footer>
+  <div class="prototype-disclaimer">Design concept only · Sample notice content shown for layout demonstration. Verify all details against official UKPSC notices.</div>
+  <script src="script.js"></script>
+</body>
+</html>

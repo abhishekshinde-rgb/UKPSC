@@ -1,0 +1,11 @@
+const menuToggle=document.getElementById('menuToggle'),navLinks=document.getElementById('navLinks');
+menuToggle?.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));});
+const filters=[...document.querySelectorAll('.filter')],notices=[...document.querySelectorAll('.notice')],empty=document.getElementById('emptyState');
+filters.forEach(btn=>btn.addEventListener('click',()=>{filters.forEach(f=>f.classList.toggle('active',f===btn));const type=btn.dataset.filter;let count=0;notices.forEach(n=>{const show=type==='all'||n.dataset.category===type;n.hidden=!show;if(show)count++;});empty.hidden=count!==0;empty.textContent='No notices in this category in this sample view.';}));
+document.getElementById('siteSearch')?.addEventListener('submit',e=>{e.preventDefault();const q=document.getElementById('searchInput').value.trim().toLowerCase();if(!q){document.getElementById('searchInput').focus();return;}filters.forEach(f=>f.classList.toggle('active',f.dataset.filter==='all'));let count=0;notices.forEach(n=>{const show=n.textContent.toLowerCase().includes(q);n.hidden=!show;if(show)count++;});empty.textContent=count?`Showing ${count} matching notice${count===1?'':'s'} in this sample view.`:'No matching notices in this sample view. Try another keyword.';empty.hidden=count!==0;document.getElementById('notices').scrollIntoView({behavior:'smooth'});});
+document.getElementById('contrastToggle')?.addEventListener('click',e=>{const on=document.body.classList.toggle('high-contrast');e.currentTarget.setAttribute('aria-pressed',String(on));});
+let size=16;function setSize(){document.documentElement.style.setProperty('--font',`${size}px`);}
+document.getElementById('fontUp')?.addEventListener('click',()=>{size=Math.min(20,size+1);setSize();});
+document.getElementById('fontDown')?.addEventListener('click',()=>{size=Math.max(14,size-1);setSize();});
+document.getElementById('fontReset')?.addEventListener('click',()=>{size=16;setSize();});
+document.getElementById('languageToggle')?.addEventListener('click',()=>alert('Concept preview: a production version should provide complete Hindi and English content managed through the CMS.'));
